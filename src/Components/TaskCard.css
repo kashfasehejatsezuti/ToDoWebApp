@@ -1,0 +1,26 @@
+.task_card {
+  width: 100%;
+  min-height: 100px;
+  border: 1px solid #b4c0cf;
+  border-bottom: 2px solid #b4c0cf;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 15px 0;
+  background-color: #ffffff;
+}
+.task_text {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: #000000;
+}
+.task_card_bottom_line {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.task_text_border {
+  border-bottom: 1.4px solid #5a347a;
+  width: 100%;
+  margin-bottom: 10px;
+}
