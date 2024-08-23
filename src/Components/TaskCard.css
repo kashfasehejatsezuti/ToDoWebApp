@@ -7,6 +7,11 @@
   padding: 10px;
   margin: 15px 0;
   background-color: #ffffff;
+  cursor: grab;
+}
+.task_card:active {
+  opacity: 0.7;
+  border: 1px solid #000000;
 }
 .task_text {
   font-size: 18px;
