@@ -2,7 +2,7 @@ import "./Tag.css";
 
 const Tag = (propType) => {
   const tagStyle = {
-    Frontend: { backgroundColor: "#fd7221", color: "#fff" },
+    Frontend: { backgroundColor: "#fdca21", color: "#fff" },
     Backend: { backgroundColor: "#255bad", color: "#fff" },
     FullStack: { backgroundColor: "#e74951", color: "#fff" },
     DevOps: { backgroundColor: "#0b714c", color: "#fff" },

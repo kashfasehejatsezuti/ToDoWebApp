@@ -4,18 +4,26 @@ import "./DropArea.css";
 
 const DropArea = ({ onDrop, status, index }) => {
   const [showDrop, setShowDrop] = useState(false);
+
   return (
     <section
       className={showDrop ? "drop_area" : "drop_hide"}
       onDragEnter={() => setShowDrop(true)}
       onDragLeave={() => setShowDrop(false)}
       onDrop={() => {
-        onDrop(status, index);
+        // e.preventDefault(); // Prevent the default browser behavior
+        // console.log(
+        //   "Dropped on area with index:",
+        //   index,
+        //   "and status:",
+        //   status
+        // );
+        onDrop(status, index); // Pass both status and index
         setShowDrop(false);
       }}
-      onDragOver={(e) => e.preventDefault()}
+      onDragOver={(e) => e.preventDefault()} // Allow drop by preventing default behavior
     >
-      <h4> Drop Here</h4>
+      <h4>Drop Here</h4>
     </section>
   );
 };

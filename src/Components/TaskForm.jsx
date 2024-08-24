@@ -8,7 +8,7 @@ const TaskForm = (propType) => {
   const [taskData, setTaskData] = useState({
     id: uuidv4(), // Generate a unique ID for each task
     task: "",
-    status: "todo",
+    status: "To Do",
     tags: [],
   });
 
@@ -26,7 +26,7 @@ const TaskForm = (propType) => {
     });
 
     // Reset task data and regenerate the ID for the next task
-    setTaskData({ id: uuidv4(), task: "", status: "todo", tags: [] });
+    setTaskData({ id: uuidv4(), task: "", status: "To Do", tags: [] });
   };
 
   const checkTag = (tag) => {
@@ -85,6 +85,7 @@ const TaskForm = (propType) => {
               selected={checkTag("DataBase")}
             />
           </div>
+
           <div>
             <select
               className="task_status"
@@ -92,9 +93,9 @@ const TaskForm = (propType) => {
               value={taskData.status}
               onChange={handleChange}
             >
-              <option value="todo">To Do</option>
-              <option value="progress">Progress</option>
-              <option value="done">Done</option>
+              <option value="To Do">To Do</option>
+              <option value="Progress">Progress</option>
+              <option value="Done">Done</option>
             </select>
             <button type="submit" className="task_submit">
               Add Task

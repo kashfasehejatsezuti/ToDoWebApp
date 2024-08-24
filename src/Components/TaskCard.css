@@ -6,7 +6,7 @@
   border-radius: 10px;
   padding: 10px;
   margin: 15px 0;
-  background-color: #ffffff;
+  background-color: rgb(251, 251, 251);
   cursor: grab;
 }
 .task_card:active {
@@ -25,7 +25,15 @@
   justify-content: space-between;
 }
 .task_text_border {
-  border-bottom: 1.4px solid #5a347a;
+  border-bottom: 1.4px solid #0e0d0d;
   width: 100%;
   margin-bottom: 10px;
+}
+
+.task_card_status {
+  font-size: 14px;
+  font-weight: 600;
+  margin-top: 1rem;
+  text-align: start;
+  display: flex;
 }
